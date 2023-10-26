@@ -27,7 +27,8 @@ function DownloadCV() {
   return (
     <div className="container">
       <h2 className="mt-4">Scarica il mio Curriculum Vitae</h2>
-      <p>Inserisci il tuo indirizzo email per scaricare il CV.</p>
+      
+      <p>Inserisci il tuo indirizzo email per scaricare il CV. </p>
       <div className="input-group mb-3">
         <input
           type="email"
