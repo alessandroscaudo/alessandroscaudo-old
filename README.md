@@ -88,3 +88,6 @@ And lastly if you’d like to remove Cypress entirely, delete the entire `cypres
 ```bash
 npm uninstall -S cypress
 ```
+
+### Palete colori
+https://coolors.co/d9fe95-618b25-010101-2f5c70-5db7de-f1e9db
