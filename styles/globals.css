@@ -42,8 +42,8 @@ nav {
   align-items: center;
   border: 0.1rem solid #010101;
   border-radius: 1rem;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
+  padding: 0.75rem !important;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .containerHigh {
@@ -85,8 +85,6 @@ code {
 }
 
 
-
-
 .btn-flat {
   border: 0.1rem solid #010101 !important;
   background-color: #F1E9DB !important;
@@ -111,4 +109,14 @@ code {
 .social-icon:hover {
   color: #010101; /* Colore al passaggio del mouse */
   max-height: 50px;
+}
+
+.immagine{
+  border: 0.1rem solid #010101;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 1024px;
+  align-items: center;
+  margin: auto;
+
 }
