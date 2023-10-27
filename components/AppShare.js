@@ -7,25 +7,25 @@ export default function AppShare() {
     return (
         <div className='containerLow'>
             <Row>
-                <Col className="justify-content-center">
+                <Col style={{textAlign:"center", margin:"auto"}}>
                     <a href="http://instagram.com/alessandroscaudo" target="_blank">
-                        <FontAwesomeIcon icon={faInstagram} size="l" style={{color: "#6AA202"}} /> 
+                        <FontAwesomeIcon icon={faInstagram}  style={{color: "#6AA202", maxHeight: "50px"}}/> 
                     </a>
                      
                 </Col>
-                <Col className="">
+                <Col style={{textAlign:"center", margin:"auto"}}>
                     <a href="http://linkedin.com/alessandroscaudo" target="_blank">
-                        <FontAwesomeIcon icon={faLinkedinIn} size="l" style={{color: "#6AA202"}} />
+                        <FontAwesomeIcon icon={faLinkedinIn} style={{color: "#6AA202", maxHeight: "50px"}} />
                     </a>
                 </Col>
-                <Col className="">
+                <Col style={{textAlign:"center", margin:"auto"}}>
                     <a href="http://messenger.com/alessandroscaudo" target="_blank">
-                        <FontAwesomeIcon icon={faFacebookMessenger} size="s" style={{color: "#6AA202"}} />
+                        <FontAwesomeIcon icon={faFacebookMessenger} style={{color: "#6AA202", maxHeight: "50px"}} />
                     </a>
                 </Col>
-                <Col className="">
+                <Col style={{textAlign:"center", margin:"auto"}}>
                     <a href="http://strava.com/alessandroscaudo" target="_blank">
-                        <FontAwesomeIcon icon={faStrava} size="s" style={{color: "#6AA202"}} />
+                        <FontAwesomeIcon icon={faStrava} style={{color: "#6AA202", maxHeight: "50px"}} />
                     </a>
                 </Col>    
             </Row>
