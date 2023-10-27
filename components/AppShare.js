@@ -14,17 +14,17 @@ export default function AppShare() {
                      
                 </Col>
                 <Col style={{textAlign:"center", margin:"auto"}}>
-                    <a href="http://linkedin.com/alessandroscaudo" target="_blank">
+                    <a href="http://linkedin.com/in/alessandroscaudo" target="_blank">
                         <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
                     </a>
                 </Col>
                 <Col style={{textAlign:"center", margin:"auto"}}>
-                    <a href="http://messenger.com/alessandroscaudo" target="_blank">
+                    <a href="http://m.me/scaudo.alessandro" target="_blank">
                         <FontAwesomeIcon icon={faFacebookMessenger} className="social-icon" />
                     </a>
                 </Col>
                 <Col style={{textAlign:"center", margin:"auto"}}>
-                    <a href="http://strava.com/alessandroscaudo" target="_blank">
+                    <a href="http://strava.com/athletes/22604206" target="_blank">
                         <FontAwesomeIcon icon={faStrava} className="social-icon" />
                     </a>
                 </Col>    
