@@ -38,12 +38,11 @@ nav {
 
 .containerLow {
   background-color: #fafafa;
-  justify-content: space-between;
-  align-items: center;
   border: 0.1rem solid #010101;
   border-radius: 1rem;
-  padding: 0.75rem !important;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  width: auto;
 }
 
 .containerHigh {

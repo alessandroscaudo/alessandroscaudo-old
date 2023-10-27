@@ -12,17 +12,21 @@ export default function aboutMe() {
       </Head>
       <Header title="Alessandro Scaudo" />
       <main>
-        <Row xs={1} >
-          <Col className='containerLow'>
+      <Row>
+        <Col xs={12} sm={6} >
+          <div className='containerLow'>
             <h1>About me</h1>
             <p>Ciao, <br />
-            Sono Alessandro, un quasi trentenne... con una passione per la fotografia, i viaggi e l'avventura...
+              Sono Alessandro, un quasi trentenne... con una passione per la fotografia, i viaggi e l'avventura...
             </p>
-          </Col>
-          <Col className='containerLow' >
+          </div>
+        </Col>
+        <Col xs={12} sm={6} >
+          <div className='containerLow'>
             <img className='immagine' src='aboutMe/aboutMe.webp' alt='Foto di Alessandro a Roma' />
-          </Col>
-        </Row>
+          </div>
+        </Col>
+      </Row>
 
       </main>
       <Footer />
