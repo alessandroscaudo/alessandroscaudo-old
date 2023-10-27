@@ -38,7 +38,7 @@ function DownloadCV() {
           onChange={handleEmailChange}
         />
         <div className="input-group-append">
-          <button className="btn btn-primary" onClick={handleDownload}>
+          <button className="btn btn-flat" onClick={handleDownload}>
             Scarica il CV
           </button>
         </div>

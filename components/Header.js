@@ -24,8 +24,8 @@ function Header(props) {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-        <ul className="navbar-nav ml-auto ">
+      <div className={`collapse navbar-collapse ms-auto  ${isOpen ? 'show' : ''} `} id="navbarNav">
+        <ul className="navbar-nav ms-auto"> {/* Aggiungi la classe ml-auto */}
           <li className="nav-item">
             <a className="nav-link" href="#">
               Home
