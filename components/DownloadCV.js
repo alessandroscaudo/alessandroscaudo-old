@@ -48,6 +48,9 @@ function DownloadCV() {
           Indirizzo email non valido. Inserisci un indirizzo email valido.
         </div>
       )}
+      <div>
+        <p style={{fontWeight:"lighter"}}>Premendo "Scarica il CV", accetti la nostra <a style={{fontWeight:"bold" }} href='/privacyPolicy'>Informativa sulla privacy</a>.</p>
+      </div>
     </div>
   );
 }

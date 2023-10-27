@@ -12,6 +12,7 @@ body {
 }
 
 a {
+  font-weight: bold;
   color: #010101 !important;
   text-decoration: none !important;
 }
@@ -63,6 +64,29 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
+.nav-link {
+  border: 0.1rem solid #010101 !important;
+  border-radius: 1rem;
+  margin: 0.25rem;
+  min-width: 100px;
+  background-color: #F1E9DB !important;
+  color: #010101 !important;
+  font-weight: bolder !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  transition: all 0.2s; /* Aggiunge una transizione fluida per il cambio colore */
+}
+
+.nav-link:hover {
+  background-color: #010101 !important;
+  color: #F1E9DB !important;
+}
+
+
+
+
 .btn-flat {
   border: 0.1rem solid #010101 !important;
   background-color: #F1E9DB !important;
@@ -80,6 +104,8 @@ code {
 .social-icon {
   color: #618B25; /* Colore predefinito */
   max-height: 50px;
+  transition: all 0.2s; /* Aggiunge una transizione fluida per il cambio colore */
+
 }
 
 .social-icon:hover {

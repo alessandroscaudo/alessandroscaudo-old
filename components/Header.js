@@ -10,7 +10,7 @@ function Header(props) {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
-      <a className="navbar-brand" href="http://alessandroscaudo.com">
+      <a className="navbar-brand" href="/">
         <h1>{props.title}</h1>
       </a>
       <button
@@ -27,7 +27,7 @@ function Header(props) {
       <div className={`collapse navbar-collapse ms-auto  ${isOpen ? 'show' : ''} `} id="navbarNav">
         <ul className="navbar-nav ms-auto"> {/* Aggiungi la classe ml-auto */}
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/">
               Home
             </a>
           </li>
