@@ -7,24 +7,25 @@ export default function AppShare() {
     return (
         <div className='containerLow'>
             <Row>
-                <Col className="d-flex justify-content-center">
+                <Col className="justify-content-center">
                     <a href="http://instagram.com/alessandroscaudo" target="_blank">
-                        <FontAwesomeIcon icon={faInstagram} size="2xl" style={{color: "#6AA202"}} />
+                        <FontAwesomeIcon icon={faInstagram} size="l" style={{color: "#6AA202"}} /> 
                     </a>
+                     
                 </Col>
-                <Col className="d-flex justify-content-center">
+                <Col className="">
                     <a href="http://linkedin.com/alessandroscaudo" target="_blank">
-                        <FontAwesomeIcon icon={faLinkedinIn} size="2xl" style={{color: "#6AA202"}} />
+                        <FontAwesomeIcon icon={faLinkedinIn} size="l" style={{color: "#6AA202"}} />
                     </a>
                 </Col>
-                <Col className="d-flex justify-content-center">
+                <Col className="">
                     <a href="http://messenger.com/alessandroscaudo" target="_blank">
-                        <FontAwesomeIcon icon={faFacebookMessenger} size="2xl" style={{color: "#6AA202"}} />
+                        <FontAwesomeIcon icon={faFacebookMessenger} size="s" style={{color: "#6AA202"}} />
                     </a>
                 </Col>
-                <Col className="d-flex justify-content-center">
+                <Col className="">
                     <a href="http://strava.com/alessandroscaudo" target="_blank">
-                        <FontAwesomeIcon icon={faStrava} size="2xl" style={{color: "#6AA202"}} />
+                        <FontAwesomeIcon icon={faStrava} size="s" style={{color: "#6AA202"}} />
                     </a>
                 </Col>    
             </Row>
