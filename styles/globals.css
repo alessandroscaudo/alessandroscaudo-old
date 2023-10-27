@@ -9,6 +9,12 @@ body {
   flex-direction: column;
 }
 
+nav {
+  border-bottom: 0.1rem solid #eaeaea;
+  
+  margin-bottom: 1rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,6 +22,26 @@ body {
 .container {
   justify-content: space-between;
   align-items: center;
+}
+
+.containerLow {
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid #eaeaea;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.containerHigh {
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid #eaeaea;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #D9FE95;
+
 }
 
 code {

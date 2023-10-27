@@ -12,9 +12,13 @@ export default function Home() {
       </Head>
       <Header title="Alessandro Scaudo" />
       <main>
+        <div className='containerLow'>
+          <p className="description">
+            Hello
+          </p>
+        </div>
         <DownloadCV />
-        <p className="description">
-        </p>
+        
       </main>
       <Footer />
     </div>
