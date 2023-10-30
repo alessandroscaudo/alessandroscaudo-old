@@ -3,7 +3,7 @@ import ReCAPTCHA from "react-google-recaptcha-enterprise";
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
-const GOOGLE_RECAPTCHA_SITE_KEY = "6Ldg0N4oAAAAAMqLrdXNxPcSuqODXvuP8Tsxb3el";
+const GOOGLE_RECAPTCHA_SITE_KEY = '6Ldg0N4oAAAAAMqLrdXNxPcSuqODXvuP8Tsxb3el';
 
 // Inizializza Firebase con la tua configurazione
 const firebaseConfig = {
