@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import ReCAPTCHA from "react-google-recaptcha-enterprise";
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
-const GOOGLE_RECAPTCHA_SITE_KEY = '6Ldg0N4oAAAAAMqLrdXNxPcSuqODXvuP8Tsxb3el';
+const GOOGLE_RECAPTCHA_SITE_KEY = '6Le4bt8oAAAAAFsH42Rdov83Nj8L9QzjU2gXsE-y';
 
 // Inizializza Firebase con la tua configurazione
 const firebaseConfig = {
@@ -20,7 +20,7 @@ function DownloadCV() {
   const [isEmailValid, setIsEmailValid] = useState(true);
   const [showError, setShowError] = useState(false);
   const [confirmationVisible, setConfirmationVisible] = useState(false); // Stato per il messaggio di conferma
-  const recaptchaRef = React.createRef(); // Inizializza il riferimento a reCAPTCHA
+  const recaptchaRef = useRef(null); // Inizializza il riferimento a reCAPTCHA
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -31,17 +31,16 @@ function DownloadCV() {
 
   const handleDownload = async () => {
     if (isEmailValid) {
-      const recaptchaToken = recaptchaRef.current.getValue();
-
+      const recaptchaToken = recaptchaRef.current.getValue(); // Ottieni il token ReCAPTCHA
+  
       // Verifica il reCAPTCHA token
-
       if (recaptchaToken) {
         // Salva l'indirizzo email su Firestore
         const emailData = {
           email: email,
           timestamp: new Date(),
         };
-
+  
         try {
           await addDoc(collection(db, 'emailCV'), emailData);
           // Simula il download di un file PDF
@@ -70,6 +69,7 @@ function DownloadCV() {
       <p>Inserisci il tuo indirizzo email per scaricare il CV. </p>
       <div className="input-group mb-3">
         <input
+          id="emailAddress" 
           type="email"
           className={`form-control ${isEmailValid ? '' : 'is-invalid'} me-2`}
           placeholder="Indirizzo email"
