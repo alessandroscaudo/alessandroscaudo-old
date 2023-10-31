@@ -39,6 +39,11 @@ export default function privacyPolicy() {
             Non raccogliamo informazioni di pagamento attraverso i nostri Servizi. Facciamo affidamento su terze parti per elaborare i pagamenti in relazione ai nostri Servizi. 
             Qualsiasi informazione fornita per facilitare tale pagamento è soggetta all'informativa sulla privacy del processore di pagamento di terze parti e ti invitiamo a rivedere questa politica prima di fornire qualsiasi informazione
              al processore di pagamento.</p>
+            <strong>Informazioni collezionate automaticamente quanto interagisci con noi</strong>
+            <p>In alcuni casi raccogliamo automaticamente alcune informazioni, tra cui:</p>
+            <ul>
+              <li><strong>Informazioni sull'attività:</strong> Raccogliamo informazioni </li>
+            </ul>
             <strong>Contattaci</strong>
             <p>In caso di domande sulla presente Informativa sulla privacy, contattaci all'indirizzo: <a href='mailto:scaudo.alessandro@gmail.com'>scaudo.alessandro@gmail.com</a> .
             </p>
