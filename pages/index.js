@@ -14,9 +14,7 @@ export default function Home() {
       </Head>
       <Header title="Alessandro Scaudo" />
       <main>
-        <AppShare />
-        <DownloadCV />
-        
+        <AppShare />        
       </main>
       <Footer />
       
