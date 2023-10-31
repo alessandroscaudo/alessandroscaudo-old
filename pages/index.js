@@ -8,11 +8,16 @@ export default function Home() {
     <div className="container">
       <Head>
         
-        <title>Alessandro Scaudo</title>
+        <title>ALESSANDRO SCAUDO</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header title="Alessandro Scaudo" />
       <main>
+        <div className='contenuto'>
+          <h1>MAXXI di Roma</h1>
+          <img src='VistaDelMaxxi.webp' className='immagine' alt='Vista del MAXXI di Roma'/>
+          <p>Roma - MAXXI | Museo nazionale delle arti del XXI secolo</p>
+        </div>
         <AppShare />        
       </main>
       <Footer />

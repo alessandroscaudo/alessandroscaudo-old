@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #F1E9DB !important;
+  background-color: #FFF1DD !important;
   padding: 0;
   margin: 0;
   border-radius: 1rem;
@@ -10,6 +10,15 @@ body {
   display: flex;
   flex-direction: column;
   
+}
+
+.navbar-brand{
+  font-weight:900 !important;
+  text-transform: uppercase; 
+}
+
+.navbar-toggler{
+  border: 0rem solid #010101 !important;
 }
 
 a {
@@ -40,7 +49,15 @@ nav {
 .containerLow {
   background-color: #fafafa;
   border: 0.1rem solid #010101;
+  color: #010101 !important;
   border-radius: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  width: auto;
+}
+
+.contenuto {
+  border-bottom: 0.1rem solid #010101;
   padding: 0.75rem;
   margin-bottom: 1rem;
   width: auto;
@@ -69,7 +86,6 @@ code {
   border-radius: 1rem;
   margin: 0.25rem;
   min-width: 100px;
-  background-color: #858585 !important;
   color: #010101 !important;
   font-weight: bolder !important;
   display: flex !important;
@@ -81,21 +97,21 @@ code {
 
 .nav-link:hover {
   background-color: #010101 !important;
-  color: #F1E9DB !important;
+  color: #FFF1DD !important;
 }
 
 
 .btn-flat {
   border: 0.1rem solid #010101 !important;
-  background-color: #F1E9DB !important;
+  background-color: #FFF1DD !important;
   color: #010101 !important;
   font-weight: bolder !important;
 }
 
 .btn-flat:hover {
-  border: 0.1rem solid #F1E9DB !important;
+  border: 0.1rem solid #FFF1DD !important;
   background-color: #010101 !important;
-  color: #F1E9DB !important;
+  color: #FFF1DD !important;
   font-weight: bolder !important;
 }
 
@@ -112,11 +128,11 @@ code {
 }
 
 .immagine{
-  border: 0.1rem solid #010101;
-  border-radius: 1rem;
+  border-radius: 2rem;
   width: 100%;
   max-width: 1024px;
   align-items: center;
   margin: auto;
+  margin-bottom: 1rem;
 
 }
