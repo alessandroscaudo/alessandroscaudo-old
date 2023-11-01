@@ -100,8 +100,15 @@ code {
   color: #FFF1DD !important;
 }
 
+.form-control {
+  background-color: #FFF1DD !important;
+  border: 0.1rem solid #010101 !important;
+  border-radius: 1rem !important;
+}
+
 
 .btn-flat {
+  border-radius: 1rem !important;
   border: 0.1rem solid #010101 !important;
   background-color: #FFF1DD !important;
   color: #010101 !important;

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { db } from "./API/firebase";
 import {collection, addDoc} from 'firebase/firestore';
 
+// Link al CV
+const pdfFileUrl = '/CV/ScaudoAlessandoCV.pdf';
 
 const Form = () => {
-
-    const myVariable = process.env.REACT_APP_MY_VARIABLE;
 
     //Recupero la variabile da Form
     const[email, setEmail] = useState()
@@ -20,6 +20,7 @@ const Form = () => {
         {
             await addDoc(dbref, {Email: email})
             alert("Informazioni inviate con successo")
+            window.open(pdfFileUrl, '_blank');
         }
         catch (error)
         {
@@ -33,15 +34,18 @@ const Form = () => {
                 <div className="form">
                     <h2>Scarica il mio Curricul Vitae</h2>
                     <p>Compila il form con il tuo indirizzo E-mail per scaricare il CV</p>
-                    <div className="box">
-                        <p>{myVariable}</p>
+                    <div className="input-group">
                         <input 
                         type='email'
                         value={email}
                         id="email"
-                        placeholder="E-mail"
-                        onChange={(e) => setEmail(e.target.value)} />
+                        name="email"
+                        className="form-control"
+                        placeholder="E-mail..."
+                        onChange={(e) => setEmail(e.target.value)} 
+                        required/>
                         <button
+                        className="btn btn-flat mx-2"
                         onClick={sendOnFirestore}>Scarica!</button>
                     </div>
                 </div>

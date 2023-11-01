@@ -1,10 +1,6 @@
 [build]
   command = "npm run build"
   publish = ".next"
-  environment = { MY_VARIABLE = "valore_di_esempio" }
-
-[build.environment]
-  REACT_APP_MY_VARIABLE = "valore_di_esempio"
 
 [[plugins]]
   package = "netlify-plugin-cypress"
