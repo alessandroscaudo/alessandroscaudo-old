@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import AppShare from '@components/AppShare'
+import DownloadCV from '@components/DownloadCV'
 import Footer from '@components/Footer'
 
 export default function Home() {
@@ -18,7 +19,8 @@ export default function Home() {
           <img src='VistaDelMaxxi.webp' className='immagine' alt='Vista del MAXXI di Roma'/>
           <p>Roma - MAXXI | Museo nazionale delle arti del XXI secolo</p>
         </div>
-        <AppShare />        
+        <AppShare />
+        <DownloadCV />        
       </main>
       <Footer />
       

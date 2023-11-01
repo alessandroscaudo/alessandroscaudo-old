@@ -1,94 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
+import React, { useState } from "react";
+import { db } from "./API/firebase";
+import {collection, addDoc} from 'firebase/firestore';
 
-const firebaseConfig = {
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    databaseURL: process.env.FIREBASE_DATABASE_URL,
-    appId: process.env.FIREBASE_APP_ID,
-  };
-  
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
- 
-const DownloadCV = () => {
-    const [todo, setTodo] = useState("");
-    const [todos, setTodos] = useState([]);
- 
-    const addTodo = async (e) => {
-        e.preventDefault();  
-       
-        try {
-            const docRef = await addDoc(collection(db, "emailCV"), {
-              todo: todo,    
-            });
-            console.log("Document written with ID: ", docRef.id);
-          } catch (e) {
-            console.error("Error adding document: ", e);
-          }
+const Form = () => {
+
+    //Recupero la variabile da Form
+    const[email, setEmail] = useState()
+
+    //Set riferimenti database
+    const dbref = collection(db, 'emailCV')
+
+    //Invio i dati a Firestore
+    const sendOnFirestore  = async () =>
+    {
+        try
+        {
+            await addDoc(dbref, {Email: email})
+            alert("Informazioni inviate con successo")
+        }
+        catch (error)
+        {
+            alert(error)
+        }
     }
- 
-    const fetchPost = async () => {
-       
-        await getDocs(collection(db, "emailCV"))
-            .then((querySnapshot)=>{              
-                const newData = querySnapshot.docs
-                    .map((doc) => ({...doc.data(), id:doc.id }));
-                setTodos(newData);                
-                console.log(todos, newData);
-            })
-       
-    }
-   
-    useEffect(()=>{
-        fetchPost();
-    }, [])
- 
- 
+
     return (
-        <section className="todo-container">
-            <div className="todo">
-                <h1 className="header">
-                    Todo-App
-                </h1>
-   
-                <div>
-   
-                    <div>
-                        <input
-                            type="text"
-                            placeholder="What do you have to do today?"
-                            onChange={(e)=>setTodo(e.target.value)}
-                        />
-                    </div>
-   
-                    <div className="btn-container">
+        <>
+            <div className="containerHigh">
+                <div className="form">
+                    <h2>Scarica il mio Curricul Vitae</h2>
+                    <p>Compila il form con il tuo indirizzo E-mail per scaricare il CV</p>
+                    <div className="box">
+                        <input 
+                        type='email'
+                        value={email}
+                        id="email"
+                        placeholder="E-mail"
+                        onChange={(e) => setEmail(e.target.value)} />
                         <button
-                            type="submit"
-                            className="btn"
-                            onClick={addTodo}
-                        >
-                            Submit
-                        </button>
+                        onClick={sendOnFirestore}>Scarica!</button>
                     </div>
-   
-                </div>
-   
-                <div className="todo-content">
-                    {
-                        todos?.map((todo,i)=>(
-                            <p key={i}>
-                                {todo.todo}
-                            </p>
-                        ))
-                    }
                 </div>
             </div>
-        </section>
+        </>
     )
 }
- 
-export default DownloadCV
+
+
+export default Form
