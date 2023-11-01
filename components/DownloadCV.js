@@ -5,6 +5,8 @@ import {collection, addDoc} from 'firebase/firestore';
 
 const Form = () => {
 
+    const myVariable = process.env.REACT_APP_MY_VARIABLE;
+
     //Recupero la variabile da Form
     const[email, setEmail] = useState()
 
@@ -32,6 +34,7 @@ const Form = () => {
                     <h2>Scarica il mio Curricul Vitae</h2>
                     <p>Compila il form con il tuo indirizzo E-mail per scaricare il CV</p>
                     <div className="box">
+                        <p>{myVariable}</p>
                         <input 
                         type='email'
                         value={email}
