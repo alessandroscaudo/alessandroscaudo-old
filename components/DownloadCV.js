@@ -20,7 +20,7 @@ const Form = () => {
         {
             await addDoc(dbref, {Email: email})
             alert("Informazioni inviate con successo")
-            window.open(pdfFileUrl, '_blank');
+            //window.open(pdfFileUrl, '_blank');
         }
         catch (error)
         {
@@ -43,7 +43,7 @@ const Form = () => {
                         className="form-control"
                         placeholder="E-mail..."
                         onChange={(e) => setEmail(e.target.value)} 
-                        required/>
+                        />
                         <button
                         className="btn btn-flat mx-2"
                         onClick={sendOnFirestore}>Scarica!</button>

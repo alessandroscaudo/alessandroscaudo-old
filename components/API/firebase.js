@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN ,
-    databaseURL: process.env.FIREBASE_DATABASE_URL,
-    projectId: process.env.FIREBASE_PROJECT_ID,
+    apiKey: "AIzaSyDSCwwA_kZGWI4H7qb-uYLv4sDxHNu5BaY",
+    authDomain: "alessandroscaudo.firebaseapp.com",
+    databaseURL: "https://alessandroscaudo.firebaseio.com",
+    projectId: "alessandroscaudo",
     storageBucket: "alessandroscaudo.appspot.com",
     messagingSenderId: "244472526094",
-    appId: process.env.FIREBASE_APP_ID,
+    appId: "1:244472526094:web:415a598e863b951320935f",
     measurementId: "G-HGVBSWT75L"
   };
   
