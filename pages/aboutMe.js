@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import { Row, Col } from "react-bootstrap";
+import DownloadCV from '@components/DownloadCV';
 
 export default function aboutMe() {
   return (
@@ -27,6 +28,7 @@ export default function aboutMe() {
           </div>
         </Col>
       </Row>
+      <DownloadCV />
 
       </main>
       <Footer />
