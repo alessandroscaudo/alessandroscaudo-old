@@ -18,7 +18,7 @@ export default function aboutMe() {
           <div className='containerLow'>
             <h1>About me</h1>
             <p>Ciao, <br />
-              Sono Alessandro, un quasi trentenne... con una passione per la fotografia, i viaggi e l'avventura...
+              Mi chiamo Alessandro, ho la passione per la fotografia, i viaggi e l'avventura. Questo Blog vuole essere un contenitore dove raccontare tutte le mie passioni.
             </p>
           </div>
         </Col>

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '@components/Header'
+import { Row, Col } from "react-bootstrap";
 import AppShare from '@components/AppShare'
 import DownloadCV from '@components/DownloadCV'
 import Footer from '@components/Footer'
@@ -15,9 +16,15 @@ export default function Home() {
       <Header title="Alessandro Scaudo" />
       <main>
         <div className='contenuto'>
-          <h1>MAXXI di Roma</h1>
-          <img src='VistaDelMaxxi.webp' className='immagine' alt='Vista del MAXXI di Roma'/>
-          <p>Roma - MAXXI | Museo nazionale delle arti del XXI secolo</p>
+          <Row>
+            <h1>MAXXI di Roma</h1>
+            <Col xs={12} sm={6}>
+              <img src='VistaDelMaxxi.webp' className='immagine' alt='Vista del MAXXI di Roma'/>
+            </Col>
+            <Col xs={12} sm={6}>
+              <p>Roma - MAXXI | Museo nazionale delle arti del XXI secolo</p>
+            </Col>
+          </Row>
         </div>
         <AppShare />
         <DownloadCV />        
