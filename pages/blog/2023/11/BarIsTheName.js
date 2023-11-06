@@ -22,7 +22,9 @@ const BlogPost = () => {
             <Col>
               <div className='blog-header'>
                 <h1>Bar_Is_The_Name</h1>
-                <img src='/blog/2023/11/Bar_Is_The_Name/0d5b1841-7881-4af2-924e-77627631b085.webp' style={{maxWidth:"768px"}} id='copertina' className='immagine' alt='Copertina del post su Bar_Is_The_Name'></img>
+                <Col className='col d-flex align-self-center'>
+                  <img src='/blog/2023/11/Bar_Is_The_Name/0d5b1841-7881-4af2-924e-77627631b085.webp' style={{maxWidth:"512px"}} id='copertina' className='ms-auto immagine' alt='Copertina del post su Bar_Is_The_Name'></img>
+                </Col>
                 <p>di {author}</p>
                 <div style={{lineHeight:'1rem'}}>
                   <p style={{marginBottom:'0.5rem'}}><strong>Data di pubblicazione: </strong>{pubblicationDate}</p>
