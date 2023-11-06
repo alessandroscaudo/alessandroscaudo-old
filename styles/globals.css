@@ -50,7 +50,7 @@ nav {
   background-color: #fafafa;
   border: 0.1rem solid #010101;
   color: #010101 !important;
-  border-radius: 1rem;
+  border-radius: 2rem;
   padding: 0.75rem;
   margin-bottom: 1rem;
   width: auto;
@@ -67,7 +67,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   border: 0.1rem solid #010101;
-  border-radius: 1rem;
+  border-radius: 2rem;
   padding: 0.75rem;
   margin-bottom: 1rem;
   background-color: #D9FE95;
@@ -83,7 +83,7 @@ code {
 
 .nav-link {
   border: 0.1rem solid #010101 !important;
-  border-radius: 1rem;
+  border-radius: 2rem;
   margin: 0.25rem;
   min-width: 100px;
   color: #010101 !important;
@@ -103,12 +103,12 @@ code {
 .form-control {
   background-color: #FFF1DD !important;
   border: 0.1rem solid #010101 !important;
-  border-radius: 1rem !important;
+  border-radius: 2rem !important;
 }
 
 
 .btn-flat {
-  border-radius: 1rem !important;
+  border-radius: 2rem !important;
   border: 0.1rem solid #010101 !important;
   background-color: #FFF1DD !important;
   color: #010101 !important;
