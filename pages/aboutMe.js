@@ -10,6 +10,7 @@ export default function aboutMe() {
       <Head>
         <title>Alessandro Scaudo</title>
         <link rel="icon" href="/favicon.ico" />
+        <html lang="it" amp />
       </Head>
       <Header title="Alessandro Scaudo" />
       <main>

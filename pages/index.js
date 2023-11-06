@@ -26,6 +26,17 @@ export default function Home() {
             </Col>
           </Row>
         </div>
+        <Row>
+          <div className='contenuto'>
+            <div>
+              <h3>Bar_Is_The_Name</h3>
+              <p>anteprima</p>
+            </div>
+            <div className='col align-self-end'>
+              <a class="btn btn-flat mx-2" href="blog/2023/11/BarIsTheName" role="button">Continua..</a>
+            </div>
+          </div>
+        </Row>
         <AppShare />
         <DownloadCV />        
       </main>
