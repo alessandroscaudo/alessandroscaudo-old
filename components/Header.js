@@ -11,7 +11,7 @@ function Header(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <a className="navbar-brand" href="/">
-        <h1>{props.title}</h1>
+        <h2>{props.title}</h2>
       </a>
       <button
         className="navbar-toggler"
