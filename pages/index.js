@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        
         <title>ALESSANDRO SCAUDO</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
